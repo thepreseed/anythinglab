@@ -4363,6 +4363,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   min-height: 20px;
  margin-bottom:0;
   border: 1px solid transparent;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .navbar:before,
