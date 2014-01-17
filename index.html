@@ -2,600 +2,473 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Preseed Anything Lab</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Preseed Web Lab is an experiment to churn out products that are high impact by virtue of being simple.">
-    <meta name="author" content="Preseed">
+    <meta name="description" content="This helps us in keeping our web app obsession at check. Here we build upon anything that is beyond the scope of the kind of ideas we are building at Preseed Web Lab.
+">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
 
-    <!-- Le styles -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
-    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
-    <link href="assets/css/docs.css" rel="stylesheet">
-	<link href="assets/css/icons.css" rel="stylesheet">
-    <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+    <title>Anything Lab</title>
 
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap.css" rel="stylesheet">
+		<link href="fa/css/foaw.css" rel="stylesheet">
+	<link href="fa/css/foaw1.css" rel="stylesheet">
+	
+	
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
 
-    <!-- Le fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
-      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
-                    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
-                                   <link rel="shortcut icon" href="assets/ico/favicon.png">
-
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
   </head>
+<!-- NAVBAR
+================================================== -->
+  <body>
+   <div class="navbar-wrapper">
+      <div class="container">
 
-  <body data-spy="scroll" data-target=".bs-docs-sidebar">
-  
-    <!-- Navbar
-    ================================================== -->
-    <div class="navbar navbar-inverse navbar-fixed-top" >
-      <div class="navbar-inner">
-        <div class="container">
-          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <div class="nav-collapse collapse">
-           
-            <ul class="nav" style="float:left;">
-				<a class="brand" href="http://preseed.in"><img src="rsz_12logo.png" title="Home" alt=""/></a> 
-   			</ul>
-			<ul class="nav" style="float:right;">
-
-				<li class=""><a href="http://preseed.in" >Home</a></li>
-				<li class=""><a href="http://patron.preseed.in">Patron</a></li>
+        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+			     <a class="nav navbar-nav navbar-left" href="http://preseed.in"><img src="og1.png" style="padding-top:10px"></a>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav navbar-right">
+                <li ><a href="http://preseed.in" >Home</a></li>
+                <li><a href="http://patron.preseed.in">Patron</a></li>
+                <li><a href="http://ecell.preseed.in">E-Cell</a></li>
+				<li><a href="http://weblab.preseed.in">Web Lab</a></li>
 				<li class="active"><a href="http://anythinglab.preseed.in">Anything Lab</a></li>
-				<li class=""><a href="http://apply.preseed.in">Application Central</a></li>
-				<li class=""><a href="http://preseed.in/#Media-Network">Media Network</a></li>
-                <li><a title="Tumblr" href="http://blog.preseed.in" target="_blank" data-icon="&#xe004;" style="font-size:16px;"></a></li>
-				<li><a title="Facebook" href="http://www.facebook.com/thepreseed" target="_blank" data-icon="&#xe002;" style="font-size:16px;"></a></li>
-				<li><a title="Twitter" href="http://twitter.com/thepreseed" target="_blank" data-icon="&#xe003;" style="font-size:16px;"></a></li>
-				<li><a title="Pinterest" href="http://pinterest.com/thepreseed" target="_blank" data-icon="&#xe005;" style="font-size:16px;"></a></li>
+                 <li><a href="http://anythinglab.preseed.in/projects/4consult/">4Consult</a></li>
+				  <li><a href="http://preseed.in/#Media-Network">Media Network</a></li>
+			<li ><a href="https://medium.com/@Nishchal/collections" title="Medium" class="hov" target="_blank" style="margin-left:20px;font-size:16px" ></a></li>
+			<li><a href="http://blog.preseed.in"><i class="fa fa-tumblr fa-inverse" style="font-size:16px;margin-left:6px"></i></a></li>
+			<li><a href="http://www.facebook.com/thepreseed"><i class="fa fa-facebook fa-inverse" style="font-size:16px"></i></a></li>
+			<li><a href="http://twitter.com/thepreseed"><i class="fa fa-twitter fa-inverse" style="font-size:16px; margin-right:8px"></i></a></li>
 
-			</ul>
-
+			
+              </ul>
+            </div>
           </div>
         </div>
+
       </div>
     </div>
 
 
-
-<br/><br/>
-
-  <div class="container">
-  
-<center>  <img src="anlab.png" alt="lab-logo" width="577" height="203"></center>
-<hr class="bs-docs-separator">
-  </div>
-  
- 
-
-<div class="container">
-   
-
-  <div class="marketing">
-
-    <strong><font size="6">This helps us in keeping our web app obsession at check.</font></strong><br/><br/>
-	<em><strong><font size="4">Here we build upon anything that is beyond the scope of the kind of ideas we are building at Preseed Web Lab.</font>
-	</strong></em>  	
-
-    
-
-  
-<br/><br/>
-   <font size="5">If you have to the will to build with us upon an idea here that resonates with you regardless of your skills.<br/> As long as you can do the hard work, we will take you in.</font>
-      <div class="row-fluid">
-
-
-
-
-      </div>
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
       
-    
+     <div class="carousel-inner">
+        <div class="item active">
+         
+          <div class="container"><br/><br/><br/>
+		<!--<center>  <img src="anythinglablogo.png"/></center>-->
+		<center>  <img src="any.png" alt="lab-logo" width="550"></center>
+            <div class="carousel-caption">
+		
+		
+              <p style="font-family:droidsans;font-size:32px;margin-top:10px;">This helps us in keeping our web app obsession at check.</p>
+              <h3 style="font-family:calibriItalica;font-size:20px">Here we build upon anything that is beyond the scope of the kind of ideas we are building at <a href="http://weblab.preseed.in" target="_blank">Preseed Web Lab.</a></h3>
+             
+            </div>
+          </div>
+        </div>
+       
+       
+     
+    </div>
 
 
-	<h1>In the Kitchen</h1>
-    <p class="marketing-byline">These are the products that are still in the cooking stage. The stuff that keeps us up at nights.<br/></p>
-	<hr class="bs-docs-separator">
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+<div class="mbck" style="background-color:#FFFFFF">
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+ <!--     <div class="row">
+        <div class="col-lg-4">
+          <img class="img-circle" data-src="holder.js/140x140" alt="Generic placeholder image">
+          <h2>Heading</h2>
+          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-lg-4">
+          <img class="img-circle" data-src="holder.js/140x140" alt="Generic placeholder image">
+          <h2>Heading</h2>
+          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-lg-4">
+          <img class="img-circle" data-src="holder.js/140x140" alt="Generic placeholder image">
+          <h2>Heading</h2>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
+      </div>
+
+--> 
+<h2 style="line-height:2; font-family:droidsans;text-align:center;color:#000000">If you have the will to build with us upon an idea here that resonates<br/> with you regardless of your skills. As long as you can <br/>do the hard work, we will take you in to <br/>get you ready for the big job.</h2>
+      <!-- START THE FEATURETTES -->
+
+
+    </div> 
+	 <div id="myCarousel" class="carousel slide" data-ride="carousel" style="background-color:#ecad05;height:350px">
+	<div class="carousel-inner" style="height:350px" >
+	
+        <div class="item active"style="background-color:#ecad05;">
+		<br/><br/><br/>
+         <center><h1 style="font-family:pragmatic;font-size:48px;color:#FFFFFF"><strong>IN THE KITCHEN</strong></h1></center>
+		 <br/><br/><br/><br/>
+          <center> <h3 style="font-family:'droidsans';color:#FFFFFF;line-height:1.5">These are the projects that are still in the cooking stage. The stuff that keeps us up at nights.</h3> <br/>  
+  <a href="#redirect"> <img src="arrowdown.png"/></a> </center>
+		  <div class="carousel-caption">
+	
+		
    
-<!--<center><h1 style="font-family:Pragmatica;color:#00FF00;font-size:48px;line-height: 1.5em"><strong><a href="#webid">UCF</a></strong></h1></strong></center>
--->
+	
+      </div>
+    </div> 
+    </div> 
+	
+	
+	
+	<div class="container marketing" id="redirect">
+	<br/>
+<!--	<center><h1 style="color:#02669a;font-size:48px;line-height:2">Foods And Flavours</h1></center>
+	<center><h1 style="color:#02669a;font-size:48px;line-height:2">Cafe Geeks and Freaks</h1></center>
+	<center><h1 style="color:#02669a;font-size:48px;line-height:2">FMCG Delivery</h1></center>
+	<center><h1 style="color:#02669a;font-size:48px;line-height:2">Co Working Spaces</h1></center>
+	<center><h1 style="color:#02669a;font-size:48px;line-height:2">Our Startup Incubator</h1></center>
+	<center><h1 style="color:#02669a;font-size:48px;line-height:2">Business Consulting</h1></center> -->
 
 
- <a href="#news" data-toggle="modal" class="thumbnail chan"><h2 style="font-family:Pragmatica;color:#00FF55;font-size:48px"><strong>UCF</strong></h2></a>
+ <!--
  
-                 <div id="news" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel5" aria-hidden="true">
-  <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-    <h2 id="myModalLabel6"style="font-family:Pragmatica">UCF</h2>
-  </div>
-  <div class="modal-body">
-   
-   <p style="font-family:Arial, Helvetica, sans-serif;font-size:24px;"> Menus for special events should be just that:Special.</p>
+ <a href="#news" class="modal fade"><h2 style="font-family:Pragmatica;color:#00FF55;font-size:48px"><strong>UCF</strong></h2></a>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        <p style="font-family:Arial, Helvetica, sans-serif;font-size:24px;"> Menus for special events should be just that:Special.</p>
  
  <a href="">dig more on this</a>
 
-
-
-  </div>
-  <div class="modal-footer">
-    <button class="btn btn-warning" data-dismiss="modal" aria-hidden="true">Nice!</button>
-  </div>
-</div>
-<br/><br/>
-
-
- <a href="#geek" data-toggle="modal" class="thumbnail chan1"><h2><strong><h2 style="font-family:Pragmatica;font-size:48px"><strong>Cafe Geeks and Freaks</strong></h2></strong></h2></a>
-        </li>
-        
-          <div id="geek" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel5" aria-hidden="true">
-  <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-   <strong><h2 id="myModalLabel6" style="font-family:Pragmatica">Cafe Geeks and Freaks</h2></strong>
-  </div>
-  <div class="modal-body">
-   
- <p style="font-family:Arial, Helvetica, sans-serif;font-size:24px;"> A cafe for the inspired ones.</p>
- 
- <a href="https://medium.com/preseed-anything-lab/23973d22eee0">dig more on this</a>
-
-   
-
-
-  </div>
-  <div class="modal-footer">
-    <button class="btn btn-warning" data-dismiss="modal" aria-hidden="true">Nice!</button>
-  </div>
-</div>
-<br/>
-<br/>
-
-
-<a href="#co" data-toggle="modal" class="thumbnail chan1"><h2><strong><h2 style="font-family:Pragmatica;font-size:48px"><strong>Co Working Spaces</strong></h2></strong></h2></a>
-        </li>
-        
-          <div id="co" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel5" aria-hidden="true">
-  <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-   <strong><h2 id="myModalLabel6" style="font-family:Pragmatica">Co Working Spaces</h2></strong>
-  </div>
-  <div class="modal-body">
-   
- <p style="font-family:Arial, Helvetica, sans-serif;font-size:24px;"> We really do feel that working in isolation of the vibe of the progressive conversations takes away the possibility of incredibly valuable advice and perspectives.</p>
- 
- <a href="https://medium.com/preseed-anything-lab/118da49de328">dig more on this</a>
-
-   
-
-
-  </div>
-  <div class="modal-footer">
-    <button class="btn btn-warning" data-dismiss="modal" aria-hidden="true">Nice!</button>
-  </div>
-</div>
-<br/>
-<br/>
-
- <a href="#fmd" data-toggle="modal" class="thumbnail chan1"><h2><strong><h2 style="font-family:Pragmatica;font-size:48px"><strong>FMCG Delivery</strong></h2></strong></h2></a>
-        </li>
-        
-          <div id="fmd" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel5" aria-hidden="true">
-  <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-   <strong><h2 id="myModalLabel6" style="font-family:Pragmatica">FMCG Delivery</h2></strong>
-  </div>
-  <div class="modal-body">
-   
- <p style="font-family:Arial, Helvetica, sans-serif;font-size:24px;">We wish to be that layer between the restaurants/ offices and their daily supplies.</p>
- 
- <a href="https://medium.com/p/f0811355304f">dig more on this</a>
-
-   
-
-
-  </div>
-  <div class="modal-footer">
-    <button class="btn btn-warning" data-dismiss="modal" aria-hidden="true">Nice!</button>
-  </div>
-</div>
-<br/>
-<br/>
-
-
- <a href="#osi" data-toggle="modal" class="thumbnail chan1"><h2><strong><h2 style="font-family:Pragmatica;font-size:48px"><strong>Our Startup Incubator</strong></h2></strong></h2></a>
-        </li>
-        
-          <div id="osi" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel5" aria-hidden="true">
-  <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-   <strong><h2 id="myModalLabel6" style="font-family:Pragmatica">Our Startup Incubator</h2></strong>
-  </div>
-  <div class="modal-body">
-   
- <p style="font-family:Arial, Helvetica, sans-serif;font-size:24px;">We build MVPs at Preseed, not necessarily full blown startups. For that we are building this.</p>
- 
- <a href="https://medium.com/preseed-verticals">dig more on this</a>
-
-   
-
-
-  </div>
-  <div class="modal-footer">
-    <button class="btn btn-warning" data-dismiss="modal" aria-hidden="true">Nice!</button>
-  </div>
-</div>
-<br/>
-<br/>
-
-
-
- <a href="#bsc" data-toggle="modal" class="thumbnail chan1"><h2><strong><h2 style="font-family:Pragmatica;font-size:48px"><strong>Business Consulting</strong></h2></strong></h2></a>
-        </li>
-        
-          <div id="bsc" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel5" aria-hidden="true">
-  <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-   <strong><h2 id="myModalLabel6" style="font-family:Pragmatica">Business Consulting</h2></strong>
-  </div>
-  <div class="modal-body">
-   
- <p style="font-family:Arial, Helvetica, sans-serif;font-size:24px;">This is where we manifest our art of thinking and building stuff for your startups.</p>
- 
- <a href="http://preseed.in/anythinglab/projects/4consult">dig more on this</a>
-
-   
-
-
-  </div>
-  <div class="modal-footer">
-    <button class="btn btn-warning" data-dismiss="modal" aria-hidden="true">Nice!</button>
-  </div>
-</div>
-<br/>
-<br/>
-
-
-<!--<center><h1 style="font-family:Pragmatica;color:#3ea5ce;font-size:48px;line-height: 1.5em"><strong>Cafe Geeks and Freeks</strong></h1></center>
-<center><h1 style="font-family:Pragmatica;color:#3ea5ce;font-size:48px;line-height: 1.8em"><strong>Co Working Space</strong></h1></center>
-<center><h1 style="font-family:Pragmatica;color:#3ea5ce;font-size:48px;line-height: 1.8em"><strong>FMCG Delivery</strong></h1></center>
-<center><h1 style="font-family:Pragmatica;color:#3ea5ce;font-size:48px;line-height: 1.8em"><strong>Our Startup Incubator</strong></h1></center>
-<center><h1 style="font-family:Pragmatica;color:#3ea5ce;font-size:48px;line-height: 1.8em"><strong>Business Consulting</strong></h1></center>-->
-           
-  <hr class="bs-docs-separator">
-   
-    <div class="container">
-           <a href="https://docs.google.com/forms/d/16XI3jpoELt8lYzOBIhV3Az2X6HAv5c1XHtmnd1rybNc/viewform" class="btn btn-warning btn-large" target="_blank" style="box-shadow:none;">Sounds Interesting? <strong>Apply Here.</strong></a>
-           <p align="center" class="text-warning"><small><a href="#what" data-toggle="modal" class="text-warning">Do you fit?</a></small> </p>
-           </div>
- 
- 
-        
-
-    <div id="what" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabelWhat" aria-hidden="true">
-  <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-    <h3 id="myModalLabelWhat">Who is it for</h3>
-  </div>
-  <div class="modal-body">
-    <p>Definitely not for the faint-hearted. Apply here, if you have it in you to one day co own a great startup, because that is what is in it for you. Any short of extraordinaire, and you may not fit the bill.</p>
-  </div>
-  <div class="modal-footer">
-    <a href="http://apply.preseed.in" class="btn btn-success" style="box-shadow:none;">Let's Start</a>
-  </div>
-</div>
-    
- 
-  
-    
-
-   <!-- 
-   
-    <div class="row-fluid">
-    
-      <ul class="thumbnails example-sites">
-       
-      <li class="span3">
-          <a href="#webid" data-toggle="modal" class="thumbnail"><h2><strong>Web ID</strong></h2></a>
-        </li>
-	
-        
-          <div id="webid" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel5" aria-hidden="true">
-  <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-    <h3 id="myModalLabel5">Web Identity</h3>
-  </div>
-  <div class="modal-body">
-    <p>A product simpler than <a href="http://about.me" target="_blank">About.me</a>
-    </p>
-    <p>When two people exchange personal contact information, more should happen at that instance on your mobile phones and its web interface, with lesser taps, touches and clicks, automatically and simply.</p>
-
-<p>That thought in our minds have triggered a whole gamut of research and solution design for this idea.</p>
-
-
-<p>We are looking for 1 person with prior experience of having built mobile apps and is keen on assisting us on whatever we need him to assist us on. For now all we can offer this person is a chance to be a part of the team that is building this app</p>
-  </div>
-  <div class="modal-footer">
-    <button class="btn btn-info" data-dismiss="modal" aria-hidden="true">Cool</button>
-  </div>
-</div>
-
-    
-    
-      <li class="span3">
-          <a href="#news" data-toggle="modal" class="thumbnail"><h2><strong>Headlines</strong></h2></a>
-        </li>
-        
-          <div id="news" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel5" aria-hidden="true">
-  <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-    <h3 id="myModalLabel6">Headlines Now</h3>
-  </div>
-  <div class="modal-body">
-   
-  <p><strong>Our 2 seconds pitch for you:</strong> <em>We are building a new way to skim through your daily newspaper. Blazing fast.</em></p>
-
-    <p><small>Even in this day and age, majority of consumers get their daily fix of news through the newspaper dropped at the door. And with so many 'Social' news readers available, comes so much 'Social' noise. An interesting article here, a viral cat video there.</small></p>
-  <p><strong>We plan to change all that. Soon.</strong></p>
-
-
-  </div>
-  <div class="modal-footer">
-    <button class="btn btn-warning" data-dismiss="modal" aria-hidden="true">Nice!</button>
-  </div>
-</div>
-
-
-       
-
-
-        
-        <li class="span3">
-          <a href="#store" data-toggle="modal" class="thumbnail"><h2><strong>Store</strong></h2></a>
-        </li>
-        
-       <div id="store" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
-  <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-    <h3 id="myModalLabel3">Really cool products at your doorsteps</h3>
-  </div>
-  <div class="modal-body">
-    <p> Global e-commerce of products that are designed well both aesthetically and functionally.
-    <br/>
-    What's your opinion on <a href="http://uncrate.com/stuff/ploom-pax-vaporizer/" target="_blank">This</a> or <a href="http://formlabs.com" target="_blank">this here</a> or <a href="http://coolmaterial.com/home/headlock-self-closing-guitar-wall-hanger/" target="_blank">Even this</a>. Like them? How about buy them? Delivered to your doorstep. This is just the start.
-    <hr/>
-We need a supremely talented hacker and a supremely talented designer to help us build this prototype.</p>
-  </div>
-  <div class="modal-footer">
-    <button class="btn btn-danger" data-dismiss="modal" aria-hidden="true">Stop Tempting!</button>
-  </div>
-</div>
-
-        
-          <li class="span3 prototyped">
-          <a href="#todo" data-toggle="modal" class="color-change"><h2><strong>ToDo List</strong></h2></a>
-          </li>
-       <div id="todo" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel4" aria-hidden="true">
-  <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-    <h3 id="myModalLabel4">Collaborative ToDo List</h3>
-  </div>
-  <div class="modal-body">
-    <p>The world's easiest way to add instantly to your or your coworkers' to-do lists.
-    <hr/>
-If you are a small team/ startup working in a casual setting of emails and chats. This product will increase your productivity.<br/><br/>
-<a href="https://medium.com/preseed-web-lab/dd71f9ec0a01" target="_blank">Story so far</a><br/>
-<a href="https://chrome.google.com/webstore/detail/todotodo/eijljnfcmaammkjailmoddbelkkdkeme" target="_blank">Check out the MVP</a></p>
-  </div>
-  <div class="modal-footer">
-    <button class="btn btn-success" data-dismiss="modal" aria-hidden="true">Oh Sweet</button>
-  </div>
-</div>
-
-
-
-        
-      </ul>
-
-	  <ul class="thumbnails example-sites">
-           
-        <li class="span3">
-          <a href="#neophile" data-toggle="modal" class="thumbnail"><h2><strong>Neophile</strong></h2></a>
-         
-        </li>
-        
-          <div id="neophile" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
-  <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-    <h3 id="myModalLabel">A directory of talented people and such worthy projects</h3>
-  </div>
-  <div class="modal-body">
-    <p> Honestly, the first goal of this product is to give us access to talented people in India. In the process we hope to solve the same problem for many by constantly creating well selected directory of talented people in India for matching them to projects and people worthy of their time.
-	    <hr/>
-	    If you are just curious for being a part of a neophilic network. Sign up <a href="http://neophile.co" target="_blank">Here</a>
-    </p>
-  </div>
-  <div class="modal-footer">
-    <button class="btn btn-info" data-dismiss="modal" aria-hidden="true">OK. Good</button>
-  </div>
-</div>
-
-    
-            <li class="span3">
-                   <a href="#learn" data-toggle="modal" class="thumbnail"><h2><strong>Educate</strong></h2></a>
-        </li>
-                   
-                          <div id="learn" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
-  <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-    <h3 id="myModalLabel2">Education Disruptor</h3>
-  </div>
-  <div class="modal-body">
-    <p>We feel that there are two spots on the web that are absolutely ripe for disruption -
-<br/><br/>
-<strong>Big Data</strong><br/>
-For there is too much data on the web and it's growing by the second.<br/><small>(Lets ignore this for now)</small>
-<br/><br/>
-<strong>Education</strong><br/>
-An experience of Education consumption the way we consume infotainment sitting on Facebook, sometimes all day, with such keen interest over random feeds.This is one concept thats been haunting us for a while. For every user on Facebook is also an education consumer. If you already know what we mean, come and join us to form our R&D team to soon freeze the concept.<br/><small> (A platform which will curate and distribute content in structures inspired from existing school course structures, for a reason ofcourse).</small>
-</p>
-  </div>
-  <div class="modal-footer">
-    <button class="btn btn-info" data-dismiss="modal" aria-hidden="true">Awesome</button>
-  </div>
-</div>
-         
-         
-         <li class="span3">
-          <a href="#eventapp" data-toggle="modal" class="thumbnail"><h2><strong>Happenow</strong></h2></a>
-          </li>
-       <div id="eventapp" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel7" aria-hidden="true">
-  <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-    <h3 id="myModalLabel7">What to do Today</h3>
-  </div>
-  <div class="modal-body">
-    <p>Ever wondered what to do today? Decide and share instantly by knowing what's happening around you. Simple No-Nonsense app that presents today's events around you based on your location.
-    <hr/>
-Work is underway. But we could use talented app devs/designers to accelerate the production time</p>
-  </div>
-  <div class="modal-footer">
-    <button class="btn btn-success" data-dismiss="modal" aria-hidden="true">Very nice!</button>
-  </div>
-</div>
-
-
-     <li class="span3">
-          <a href="#slidedeck" data-toggle="modal" class="thumbnail"><h2><strong>Slide Deck</strong></h2></a>
-         
-        </li>
-        
-          <div id="slidedeck" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
-  <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-    <h3 id="myModalLabel">Startup Slide Deck</h3>
-  </div>
-  <div class="modal-body">
-<p>An evolving, social  and collaborative Startup Slide Deck.</p>
-  </div>
-  <div class="modal-footer">
-    <button class="btn btn-info" data-dismiss="modal" aria-hidden="true">OK. Good</button>
-  </div>
-</div>
-      
-
-
-
-      
-      </ul>
-	   <ul class="thumbnails example-sites">
-	   
-
-
-
-	<li class="span3">
-          <a href="#tws" data-toggle="modal" class="thumbnail"><h2><strong>TWS</strong></h2></a>
-         
-        </li>
-        
-          <div id="tws" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
-  <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-    <h3 id="myModalLabel">The Witty Shit</h3>
-  </div>
-  <div class="modal-body">
-<p>Mobile application for Tweeted Humour</p>
-  </div>
-  <div class="modal-footer">
-    <button class="btn btn-info" data-dismiss="modal" aria-hidden="true">OK. Good</button>
-  </div>
-</div>
-	<li class="span3 prototyped">
-          <a href="#relaxread" data-toggle="modal" class="thumbnail color-change"><h2><strong>Relax and Read</strong></h2></a>
-         
-        </li>
-        
-          <div id="relaxread" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
-  <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-    <h3 id="myModalLabel">Relax and Read</h3>
-  </div>
-  <div class="modal-body">
-<p>It will adjust the text size as you move.<hr>
-Sometimes while reading, the back is not straight because the face has to be too close to the screen. That is bad not only for the back but also for the eye. From now on as you read be as far to the screen as you like.<br/>
-Check out our <a href="https://dl.dropboxusercontent.com/u/104468001/index.html" target="_blank">prototype</a></p>
-  </div>
-  <div class="modal-footer">
-    <button class="btn btn-info" data-dismiss="modal" aria-hidden="true">Awesome</button>
-  </div>
-</div>
-
-</ul>
-
-     </div>
-    <div class="container">
-           <a href="http://apply.preseed.in/weblab.html" class="btn btn-warning btn-large" target="_blank" style="box-shadow:none;">Sounds Interesting? <strong>Apply Here.</strong></a>
-           <p align="center" class="text-warning"><small><a href="#what" data-toggle="modal" class="text-warning">Do you fit?</a></small> </p>
-           </div>
- 
- 
-        
-
-    <div id="what" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabelWhat" aria-hidden="true">
-  <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-    <h3 id="myModalLabelWhat">Who is it for</h3>
-  </div>
-  <div class="modal-body">
-    <p>Definitely not for the faint-hearted. Apply here, if you have it in you to one day co own a great startup, because that is what is in it for you. Any short of extraordinaire, and you may not fit the bill.</p>
-  </div>
-  <div class="modal-footer">
-    <a href="http://apply.preseed.in" class="btn btn-success" style="box-shadow:none;">Let's Start</a>
-  </div>
-</div>
-
-
-           
-  
-
-  </div>-->
-</div>
-
-
-
-
-
-    <!-- Footer
-    ================================================== -->
-    <footer class="footer">
-      <div class="container">
       </div>
-    </footer>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+-->
+<!-- Modal -->
+
+ 
+
+<!-- Button trigger modal -->
+<!-- Button trigger modal -->
+<br/><br/>
+<center><strong><a href="#myModal" class="color-change"data-toggle="modal" style="line-height:2.5; font-family:pragmatic;font-size:48px">Favourite City Foods Served</a></strong>
+  </center>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+       <h4 class="modal-title" id="myModalLabel" style="font-size:24.5px;text-align:center;font-weight:bold">Favourite City Foods Served</h4>
+      </div>
+      <div class="modal-body">
+    <center>   <p style="font-family:droidsans;font-size:20px;">  We bring the favourite dishes from your city, to your guests, in our style.
+</p></center>
+<br/>
+
+      </div>
+      <div class="modal-footer">
+         <button class="btn btn-warning" data-dismiss="modal" aria-hidden="true">Nice!</button>
+        
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<br/>
+
+<center><a href="#myModa" data-toggle="modal" class="colo" style="line-height:2.5; font-family:pragmatic;font-size:48px">Cafe Geeks and Freaks</a>
+  </center>
+
+<!-- Modal -->
+<div class="modal fade" id="myModa" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      <h4 class="modal-title" id="myModalLabel" style="font-size:24.5px;font-weight:bold"><center>Cafe Geeks and Freaks</center></h4>
+      </div>
+      <div class="modal-body">
+        <p style="font-family:droidsans;font-size:20px;text-align:center;">Open environment for co creation, innovation, & caffeine.</p> 
+      	<br/>
+		<a href="https://medium.com/preseed-anything-lab/23973d22eee0"target="_blank" style="font-size:16px"><center>Dig more on this</center></a>
+	  </div>
+      <div class="modal-footer">
+        <button class="btn btn-warning" data-dismiss="modal" aria-hidden="true">Nice!</button>
+       
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<br/>
+<center><a href="#myMod" class="colo" data-toggle="modal" style="line-height:2.5; font-family:pragmatic;font-size:48px">FMCG Delivery</a>
+  </center>
+
+<!-- Modal -->
+<div class="modal fade" id="myMod" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+         <h4 class="modal-title" id="myModalLabel" style="font-size:24.5px;text-align:center;font-weight:bold">FMCG Delivery</h4>
+     
+	  </div>
+      <div class="modal-body">
+       <p style="font-family:droidsans;font-size:20px;text-align:center">  We wish to be that layer between the restaurants/offices and their daily supplies.</p>
+		 <br/><a href="https://medium.com/p/f0811355304f" target="_blank" style="font-size:16px"><center>Dig more on this</center></a>
+      </div>
+      <div class="modal-footer">
+        
+         <button class="btn btn-warning" data-dismiss="modal" aria-hidden="true">Nice!</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<br/>
+
+<center><a href="#myod" data-toggle="modal" class="colo" style="line-height:2.5; font-family:pragmatic;font-size:48px">Co Working Spaces</a>
+  </center>
+
+<!-- Modal -->
+<div class="modal fade" id="myod" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel" style="font-size:24.5px;font-weight:bold;text-align:center">Co Working Spaces</h4>
+      </div>
+      <div class="modal-body">
+       <p style="font-family:droidsans;font-size:20px;text-align:center">  We really do feel that working in isolation of the vibe of the progressive conversations takes away the possibility of incredibly valuable advice and perspectives.</p>
+		<br/>
+		<a href="https://medium.com/preseed-anything-lab/118da49de328" target="_blank" style="font-size:16px;"><center>Dig more on this</center></a>
+      </div>
+      <div class="modal-footer">
+       
+         <button class="btn btn-warning" data-dismiss="modal" aria-hidden="true">Nice!</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<br/>
+
+<center><a href="#myM" class="colo" data-toggle="modal" style="line-height:2.5; font-family:pragmatic;font-size:48px">Our Startup Incubator</a>
+  </center>
+
+<!-- Modal -->
+<div class="modal fade" id="myM" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+         <h4 class="modal-title" id="myModalLabel" style="font-weight:bold;font-size:24.5px;text-align:center">Our Startup Incubator</h4>
+      </div>
+      <div class="modal-body">
+      <p style="font-family:droidsans;font-size:20px;text-align:center"> We build MVPs at Preseed, not necessarily full blown startups. For that we are building this.</p>
+		 <br/>
+		 <a href="https://medium.com/preseed-verticals" target="_blank" style="font-size:16px"><center>Dig more on this</center></a>
+      </div>
+      <div class="modal-footer">
+
+        <button class="btn btn-warning" data-dismiss="modal" aria-hidden="true">Nice!</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<br/>
+<center><a href="#my" class="colo" data-toggle="modal" style="line-height:2.5; font-family:pragmatic;font-size:48px">Business Consulting</a>
+  </center>
+
+<!-- Modal -->
+<div class="modal fade" id="my" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel" style="font-weight:bold;font-size:24.5px;text-align:center">Business Consulting</h4>
+      </div>
+      <div class="modal-body">
+	   <p style="font-family:droidsans;font-size:20px;text-align:center">This is where we manifest our art of thinking and building stuff for your startups.</p>
+	  <br/>
+        <a href="
+http://anythinglab.preseed.in/projects/4consult/" target="_blank" style="font-size:16px"><center>Dig more on this</center></a>
+      </div>
+      <div class="modal-footer">
+       
+		 <button class="btn btn-warning" data-dismiss="modal" aria-hidden="true">Nice!</button>
+        
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<br/>
+
+<center><a href="#sf" class="colo" data-toggle="modal" style="line-height:2.5; font-family:pragmatic;font-size:48px">The Startup Fund
+</a>
+  </center>
+
+<!-- Modal -->
+<div class="modal fade" id="sf" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+         <h4 class="modal-title" id="myModalLabel" style="font-weight:bold;font-size:24.5px;text-align:center">The Startup Fund
+</h4>
+      </div>
+      <div class="modal-body">
+      <p style="font-family:droidsans;font-size:20px;text-align:center"> If Preseed is our play ground where experiment flow happens, this is our business ground where deal flow happens.</p>
+		 <br/>
+		
+      </div>
+      <div class="modal-footer">
+
+        <button class="btn btn-warning" data-dismiss="modal" aria-hidden="true">Nice!</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<br/>
+<br/><br/>
+
+    <div class="container">
+        <center><a href="http://apply.preseed.in/anythinglab.html" class="btn btn-warning btn-lg" target="_blank" style="box-shadow:none;">Sounds Interesting? <strong>Apply Here.</strong></a>
+		
+      <!--     <p align="center" class="text-warning"><small><a href="#what" data-toggle="modal" class="text-warning">Do you fit?</a></small> </p>
+           </center></div>
+    <div id="what" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabelWhat" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabelWhat">Who is it for</h3>
+  </div>
+  <div class="modal-body">
+    <p>Definitely not for the faint-hearted. Apply here, if you have it in you to one day co own a great startup, because that is what is in it for you. Any short of extraordinaire, and you may not fit the bill.</p>
+  </div>
+  <div class="modal-footer">
+    <a href="http://apply.preseed.in" class="btn btn-success" style="box-shadow:none;">Let's Start</a>
+  </div>
+</div>-->
+  <!--  <hr class="featurette-divider"> -->
+  <center><a href="#bs" class="text-warning" data-toggle="modal" style="line-height:2.5;">Do you fit?</a>
+  </center>
+
+<!-- Modal -->
+<div class="modal fade" id="bs" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+         <h4 class="modal-title" id="myModalLabel" style="font-family:pragmaticabold;font-size:36px">Who is it for</h4>
+      </div>
+      <div class="modal-body">
+      <p style="font-family:Arial, Helvetica, sans-serif;font-size:24px;"> Definitely not for the faint-hearted. Apply here, if you have it in you to one day co own a great startup, because that is what is in it for you. Any short of extraordinaire, and you may not fit the bill.</p>
+		 <br/>
+		 
+      </div>
+      <div class="modal-footer">
+   <a href="http://apply.preseed.in/anythinglab.html" class="btn btn-success" style="box-shadow:none;">Let's Start</a>
+      
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+</div>
+
+<br/><br/><br/><br/>
+ <!--     <div class="row featurette" style="background-image:url('si.png')">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
+          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+        </div>
+      </div>
+-->
+     
+
+<!--      <div class="row featurette">
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+        </div>
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
+          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+        </div>
+      </div> -->
 
 
+      <!-- /END THE FEATURETTES -->
 
-    <!-- Le javascript
+<hr/>
+<br/>
+      <!-- FOOTER -->
+      <footer>
+       
+       <center> <a href="https://medium.com/the-preseed/5c668061aaea" target="_blank" style="font-family:droidsans; font-size:18px;font-weight:bold;color:#FF0000">Another brief note by our fonder about Preseed Anything Lab</a></center> 
+      </footer>
+
+<!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script type="text/javascript">
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-1930971-6']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
-
+<!--
     <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/bootstrap-transition.js"></script>
@@ -615,8 +488,9 @@ Check out our <a href="https://dl.dropboxusercontent.com/u/104468001/index.html"
     <script src="assets/js/holder/holder.js"></script>
     <script src="assets/js/google-code-prettify/prettify.js"></script>
 
-    <script src="assets/js/application.js"></script>
-
+    <script src="assets/js/application.js"></script>-->
+	 <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script src="assets/js/bootstrap.js"></script>
 
 
   </body>
